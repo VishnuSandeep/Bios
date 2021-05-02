@@ -1,0 +1,111 @@
+Bios Task 1
+1.
+n = map(int,input().strip().split())
+print(list(n))
+
+2.
+def multiply(n) :
+    result = 1
+    for x in n:
+         result = result * x
+    return result
+
+n = list(map(int,input().strip().split()))
+print(multiply(n))
+
+3.
+n = list(map(int,input().strip().split()))
+for num in n:
+    if num<0:
+        a = False
+    else:
+        a = True
+    if num not in range(10):
+        b = False
+    else:
+        b = True
+    if str(num)== str(num)[::-1]:
+        c= True
+    else:
+        c = False 
+if a and (b or c):
+    print(True)
+else:
+    print(False)
+
+
+4.
+n=int(input())
+final_list = []
+marks = []
+for i in range(n):
+    l = []
+    l.append(input())
+    score = float(input())
+    l.append(score)
+    marks.append(score)
+    final_list.append(l)
+marks.sort()
+min_value = marks[0]
+marks.remove(min_value)
+for i in marks:
+    if i > min_value:
+        Result_value = i
+        break
+Result_names = []
+for i in range(len(final_list)):
+    if Result_value in final_list[i]:
+        Result_names.append(final_list[i][0])
+Result_names.sort()
+for i in Result_names:
+    print(i)
+
+
+
+5.
+s = input()
+lower = []
+upper = []
+odd = []
+even = []
+for i in range(len(s)):
+    if s[i].isalpha():
+        if s[i].isupper():
+            upper.append(s[i])
+        else:
+            lower.append(s[i])
+    else:
+        if int(s[i])%2==0:
+            even.append(s[i])
+        else:
+            odd.append(s[i])
+lower.sort(), upper.sort(), odd.sort(), even.sort()
+print("".join(lower+upper+odd+even))
+
+Bandit
+Done Upto Level 10 before only in october before quiting from foss so just uploaded them 
+
+password for level 00 is bandit0
+
+password for level 01 is boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+password for level 02 is CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+password for level 03 is UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+password for level 04 is pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+password for level 05 is koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+password for level 06 is DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+password for level 07 is HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+password for level 08 is cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+password for level 09 is UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+password for level 10 is truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+ 
+
+
